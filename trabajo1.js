@@ -30,7 +30,7 @@ class ProductManager {
       },
     ];
   }
-
+  
   
   addProduct(title, description, price, thumbnail, code, stock) {
   
@@ -63,6 +63,7 @@ class ProductManager {
         stock,
       };
 
+    
       this.products.push(product);
       return "El producto fue agregado con exito";
     }
@@ -72,6 +73,7 @@ class ProductManager {
   getProducts() {
   
     return this.products;
+
   }
 
   
